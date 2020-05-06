@@ -370,7 +370,7 @@ button {
 
 .news-wrapper {
   display: flex;
-  height: 564px;
+  height: 550px;
   justify-content: center;
   overflow: hidden;
 }
@@ -523,7 +523,7 @@ button {
 
 .news-bottom-img-text {
   display: flex;
-  margin-top: 26px;
+  margin-top: 13px;
 }
 
 .news-bottom-single-wrapper {
@@ -605,13 +605,13 @@ button {
 
 .news-header-right-single-p {
   font-family: PingFangSC-Medium;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .news-header-right-single-span {
   font-family: PingFangSC-Medium;
   font-size: 12px;
-  color: #DDDBDB;
+  color: #C0BBBB;
   opacity: 0.54;
 }
 
@@ -642,7 +642,7 @@ button {
 
 .news-right-single-text-left {
   flex: 1;
-  max-width: 68%;
+  max-width: 76%;
   word-break: keep-all;
   white-space: nowrap;
   overflow: hidden;
@@ -736,7 +736,7 @@ button {
 
 .news-right-single-text-more {
   font-family: PingFangSC-Regular;
-  font-size: 12px;
+  font-size: 14px;
   color: #4A4A4A;
   cursor: pointer;
   opacity: 0.78;
@@ -1061,7 +1061,7 @@ button {
 
 .bottom-fixed-img {
   width: 100%;
-  height: 696px;
+  height: 706px;
   margin-top: 60px;
   background-size: 100% 100%;
   background: url("../images/bottom-fixed-img.png") no-repeat center center;
@@ -1079,7 +1079,7 @@ button {
   display: flex;
   width: 100%;
   height: 190px;
-  margin-top: 36px;
+  margin-top: 46px;
   justify-content: center;
 }
 
@@ -1203,8 +1203,8 @@ button {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background-size: contain;
-  background: url("../images/footer-company.png") no-repeat center center;
+  background: url("../images/footer-company.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .footer-image {
