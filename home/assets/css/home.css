@@ -153,7 +153,7 @@ button {
   border: none;
 }
 
-.dropdown-menu > li{
+.dropdown-menu > li {
   text-align: center;
   line-height: 36px;
 }
@@ -188,7 +188,6 @@ button {
 
 .header {
   display: flex;
-  width: 1000px;
   min-width: 1000px;
   max-width: 1260px;
   height: 120px;
@@ -201,8 +200,8 @@ button {
 .header-logo {
   width: 449px;
   height: 68px;
-  background: url("../images/logo.png") no-repeat;
   background-size: 100% 100%;
+  background: url("../images/logo.png") no-repeat center center;
 }
 
 .padding {
@@ -212,7 +211,7 @@ button {
 
 .header-input-wrapper {
   position: relative;
-  margin-top: 30px;
+  margin: 30px 10px 0 0;
 }
 
 .header-right-box {
@@ -233,10 +232,11 @@ button {
 }
 
 .header-input {
+  font-size: 14px;
   box-sizing: border-box;
-  width: 252px;
+  width: 304px;
   height: 30px;
-  padding: 0 10px;
+  padding: 0 4px;
   color: #fff;
   background-color: inherit;
   border: none;
@@ -246,8 +246,8 @@ button {
 .header-right-icon-e {
   display: inline-block;
   vertical-align: middle;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background: url("../images/eicon.png") no-repeat;
   background-size: contain;
 }
@@ -255,8 +255,8 @@ button {
 .header-right-icon-inner {
   display: inline-block;
   vertical-align: middle;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background: url("../images/einner.jpg") no-repeat;
   background-size: contain;
 }
@@ -264,8 +264,8 @@ button {
 .header-right-icon-eng {
   display: inline-block;
   vertical-align: middle;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background: url("../images/eng.png") no-repeat;
   background-size: contain;
 }
@@ -321,6 +321,7 @@ button {
   width: 100%;
   max-width: 1260px;
   min-width: 1000px;
+  padding: 10px;
   margin: 30px auto 0;
 }
 
@@ -356,7 +357,7 @@ button {
 .banner-bullet {
   display: inline-block;
   width: 66px;
-  height: 10px;
+  height: 6px;
   margin-right: 32px;
   background-color: #ffffff;
   cursor: pointer;
@@ -369,7 +370,9 @@ button {
 
 .news-wrapper {
   display: flex;
+  height: 564px;
   justify-content: center;
+  overflow: hidden;
 }
 
 .news-left-wrapper {
@@ -437,7 +440,8 @@ button {
 .news-img {
   width: 100%;
   height: 260px;
-  margin-top: 11px;
+  background: url("../images/news.png") no-repeat center center;
+  background-size: 100%;
 }
 
 .news-swiper-wrapper {
@@ -445,21 +449,21 @@ button {
   box-sizing: border-box;
   align-items: center;
   width: 100%;
-  height: 354px;
-  margin-top: 10px;
+  height: 388px;
+  margin-top: 20px;
 }
 
 .news-prev {
   left: -6px;
-  margin-top: 100px;
-  height: 80px;
+  margin-top: 80px;
+  height: 100px;
   background-color: #fff;
 }
 
 .news-next {
   right: -6px;
-  margin-top: 100px;
-  height: 80px;
+  margin-top: 80px;
+  height: 100px;
   background-color: #fff;
 }
 
@@ -604,16 +608,11 @@ button {
   font-size: 14px;
 }
 
-.news-text-right-color {
-  opacity: 0.54;
-  color: #C0BBBB;
-}
-
 .news-header-right-single-span {
-  opacity: 0.22;
   font-family: PingFangSC-Medium;
   font-size: 12px;
-  color: #FFFFFF;
+  color: #DDDBDB;
+  opacity: 0.54;
 }
 
 .news-right-bottom {
@@ -623,7 +622,7 @@ button {
 .news-right-single-text {
   display: flex;
   box-sizing: border-box;
-  line-height: 34px;
+  line-height: 36px;
   align-items: center;
   padding-left: 15px;
   word-break: keep-all;
@@ -748,21 +747,46 @@ button {
 }
 
 .media-header {
+  display: flex;
   width: 100%;
   height: 54px;
-  margin: 16px 0;
-  background: url("../images/media.png") no-repeat;
-  background-size: 100% 100%;
+  margin: 40px 0 16px 0;
   position: relative;
+}
+
+.media-header-img {
+  width: 432px;
+  height: 54px;
+  background: url("../images/media-header-img.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.media-header-rest-line {
+  flex: 1;
+  height: 54px;
+  background: url("../images/media-header-rest-line.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.media-header-corner {
+  width: 31px;
+  height: 54px;
+  background: url("../images/media-header-corner.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
 }
 
 .media-header-more {
   font-family: PingFangSC-Medium;
   font-size: 12px;
+  box-sizing: border-box;
+  padding: 0 16px;
   color: #333;
+  background-color: #fff;
   position: absolute;
-  top: 16px;
-  right: 32px;
+  top: 15px;
+  right: 45px;
 }
 
 .media-images-box {
@@ -809,7 +833,7 @@ button {
 
 .media-left-text-span {
   font-family: PingFangSC-Regular;
-  font-size: 12px;
+  font-size: 14px;
   color: #FFFFFF;
   line-height: 17px;
 }
@@ -826,16 +850,16 @@ button {
 .media-left-image {
   width: 100%;
   height: 100%;
-  background: url("../images/media-left-top.png") no-repeat;
-  background-size: 100% 100%;
+  background: url("../images/media-left-top.png") no-repeat center center;
+  background-size: 100%;
   position: relative;
 }
 
 .media-left-bottom-image {
   width: 100%;
   height: 100%;
-  background: url("../images/media-left-bootom-img.png") no-repeat;
-  background-size: 100% 100%;
+  background: url("../images/media-left-bootom-img.png") no-repeat center center;
+  background-size: 100%;
   position: relative;
 }
 
@@ -865,8 +889,8 @@ button {
 .media-center-image {
   width: 100%;
   height: 360px;
-  background: url("../images/media-center.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
+  background: url("../images/media-center.png") no-repeat center center;
   position: relative;
 }
 
@@ -884,8 +908,8 @@ button {
 }
 
 .media-right-top-image {
-  background: url("../images/media-right-top2.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
+  background: url("../images/media-right-top2.jpg") no-repeat center center;
   position: relative;
   width: 100%;
   height: 187px;
@@ -907,8 +931,8 @@ button {
 .media-right-bottom-left-image {
   width: 100%;
   height: 171px;
-  background: url("../images/media-right-top.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
+  background: url("../images/media-right-top.png") no-repeat center center;
   position: relative;
 }
 
@@ -918,8 +942,8 @@ button {
 }
 
 .media-right-bottom-right-image {
-  background: url("../images/media-right-bottom-right.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
+  background: url("../images/media-right-bottom-right.jpg") no-repeat center center;
   flex: 1;
   position: relative;
   height: 171px;
@@ -952,7 +976,7 @@ button {
   background-color: #AD2D25;
 }
 
-.person-left-wrapper-text{
+.person-left-wrapper-text {
   box-sizing: border-box;
   padding: 0 10px;
 }
@@ -989,6 +1013,8 @@ button {
 
 .person-wrapper-right-more {
   display: flex;
+  box-sizing: border-box;
+  padding-right: 10px;
   flex: 1;
   align-items: center;
   justify-content: flex-end;
@@ -997,7 +1023,7 @@ button {
 }
 
 .person-wrapper-right-bottom {
-  margin-top: 30px;
+  margin-top: 14px;
 }
 
 .person-wrapper-right-bottom-title {
@@ -1035,10 +1061,18 @@ button {
 
 .bottom-fixed-img {
   width: 100%;
-  height: 646px;
+  height: 696px;
   margin-top: 60px;
-  background: url("../images/bottom-fixed-img.png") no-repeat;
   background-size: 100% 100%;
+  background: url("../images/bottom-fixed-img.png") no-repeat center center;
+}
+
+.footer-img-wrapper {
+  box-sizing: border-box;
+  min-width: 1000px;
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .bottom-wrapper {
@@ -1051,7 +1085,7 @@ button {
 
 .bottom-image-single {
   display: flex;
-  width: 19%;
+  width: 190px;
   height: 100%;
   align-items: center;
   flex-wrap: wrap;
@@ -1090,7 +1124,7 @@ button {
   bottom: 50px;
 }
 
-.bottom-wrapper .bottom-image-single:hover .bottom-image-pic{
+.bottom-wrapper .bottom-image-single:hover .bottom-image-pic {
   transform: scale(1.2);
   transition: all 1s ease 0s;
   -webkit-transform: scale(1.2);
@@ -1098,7 +1132,7 @@ button {
 }
 
 .bottom-rest-wrapper {
-  width: 34.5%;
+  flex: 1;
   height: 190px;
 }
 
@@ -1106,8 +1140,8 @@ button {
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  padding: 16px 10px;
-  height: 173px;
+  padding: 0 10px;
+  height: 154px;
   background-color: #ffffff;
   opacity: 0.7;
   overflow: hidden;
@@ -1129,9 +1163,8 @@ button {
   text-align: center;
   width: 100%;
   height: 120px;
-  margin: 30px 0;
+  margin-top: 80px;
   background-color: #fff;
-  opacity: 0.7;
 }
 
 .footer-sigin-image {
@@ -1170,8 +1203,8 @@ button {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background: url("../images/footer-company.png") no-repeat;
   background-size: contain;
+  background: url("../images/footer-company.png") no-repeat center center;
 }
 
 .footer-image {
@@ -1207,10 +1240,9 @@ button {
 
 .info {
   box-sizing: border-box;
-  padding: 15px 10px;
-  background-color: #B30A00;
+  padding: 14px 10px;
+  background-color: rgba(179, 10, 0, 0.6);
   bottom: -100%;
-  opacity: 0.7;
   /*transform: translateZ(10px);初始文字浮起10像素方便查看图片与文字分层的效果*/
 
   /*初始文字翻转，鼠标移入时才翻正显示*/

@@ -10,7 +10,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="format-detection" content="telephone=no"/>
   <meta http-equiv="x-rim-auto-match" content="none"/>
-  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
 
   <!-- 引入 Bootstrap -->
   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -206,7 +206,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#">
-                <img src="assets/images/news.png" alt="" class="news-img">
+                <div class="news-img"></div>
               </a>
 
               <div class="news-slider-text">
@@ -294,7 +294,7 @@
           </div>
           <div class="news-header-right-single">
             <p class="news-header-right-single-p">教学看板</p>
-            <span class="news-header-right-single-span news-text-right-color">LEARNING</span>
+            <span class="news-header-right-single-span">LEARNING</span>
           </div>
         </div>
 
@@ -435,11 +435,14 @@
     <!--媒体聚焦-->
     <section class="media-wrapper">
       <div class="media-header">
+        <div class="media-header-img"></div>
+        <div class="media-header-rest-line"></div>
         <a href="#" class="media-header-more">
           更多
           <span class="all-text-more-icon all-text-more-icon-black"></span>
           <span class="all-text-more-icon all-text-more-icon-black"></span>
         </a>
+        <div class="media-header-corner"></div>
       </div>
 
       <div class="media-images-box">
@@ -594,9 +597,12 @@
         </div>
       </div>
     </section>
+  </section>
 
-    <!--底部背景图片-->
-    <section class="bottom-fixed-img">
+  <!--  footer放外面-->
+  <!--底部背景图片-->
+  <section class="bottom-fixed-img">
+    <div class="footer-img-wrapper">
       <!--人才招聘-->
       <section class="person-wrapper">
         <div class="person-wrapper-left">
@@ -758,11 +764,11 @@
           </div>
         </div>
       </section>
+    </div>
 
-      <!--icon标志-->
-      <section class="footer-sigin">
-        <img src="./assets/images/footer-sign.png" alt="" class="footer-sigin-image">
-      </section>
+    <!--icon标志-->
+    <section class="footer-sigin">
+      <img src="./assets/images/footer-sign.png" alt="" class="footer-sigin-image">
     </section>
 
     <!--页脚-->
