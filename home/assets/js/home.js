@@ -31,6 +31,7 @@ $(".news-header-right-single").mouseover(function () {
 for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
   mySwiper.pagination.bullets[i].onmouseover = function () {
     this.click();
+    mySwiper.autoplay.start();
   };
 }
 
@@ -38,10 +39,12 @@ for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
 mySwiper.el.onmouseover = function () {
   mySwiper.navigation.$nextEl.removeClass('hide');
   mySwiper.navigation.$prevEl.removeClass('hide');
+  mySwiper.autoplay.start();
 };
 mySwiper.el.onmouseout = function () {
   mySwiper.navigation.$nextEl.addClass('hide');
   mySwiper.navigation.$prevEl.addClass('hide');
+  mySwiper.autoplay.start();
 };
 
 setTimeout(function () {
