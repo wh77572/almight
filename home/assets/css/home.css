@@ -870,7 +870,7 @@ button {
   font-family: PingFangSC-Regular;
   font-size: 16px;
   color: #FFFFFF;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 /*.media-left-text:after{*/
@@ -1279,7 +1279,7 @@ button {
 
 .info {
   box-sizing: border-box;
-  padding: 14px 10px;
+  padding: 12px 10px;
   background-color: rgba(179, 10, 0, 0.6);
   bottom: -100%;
   /*transform: translateZ(10px);初始文字浮起10像素方便查看图片与文字分层的效果*/
