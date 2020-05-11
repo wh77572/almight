@@ -1,6 +1,9 @@
 var mySwiper = new Swiper('.banner-swiper-wrapper', {
-  autoplay: true,//等同于以下设置
+  autoplay: {
+    delay:5000
+  },
   loop: true,
+  speed:3000,
   navigation: {
     nextEl: '.banner-next',
     prevEl: '.banner-prev',
@@ -23,9 +26,9 @@ var mySwiper2 = new Swiper('.news-swiper-wrapper', {
 
 console.log(window.devicePixelRatio);
 
-$(".news-header-right-single").mouseover(function () {
-  $(this).addClass("news-header-active-color").siblings('.news-header-right-single').removeClass("news-header-active-color");
-});
+// $(".news-header-right-single").mouseover(function () {
+//   $(this).addClass("news-header-active-color").siblings('.news-header-right-single').removeClass("news-header-active-color");
+// });
 
 //鼠标滑过pagination控制swiper切换
 for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
